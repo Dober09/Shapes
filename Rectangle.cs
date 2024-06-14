@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    public abstract class Area
+    public class Rectangle : Area
     {
-
-        public double getArea(int a)
+        public double getArea(double l, double w)
         {
-            return 0;
+
+            return l * w;
+
         }
 
     }
-
 }
