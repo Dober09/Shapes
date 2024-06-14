@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    public abstract class Area
+    public class Square : Area
     {
 
-        public double getArea(int a)
+        public double getArea(double s)
         {
-            return 0;
+
+            return s * s;
+
         }
 
     }
-
 }

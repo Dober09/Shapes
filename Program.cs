@@ -9,13 +9,14 @@ namespace ConsoleApp4
     internal class Program
     { 
 
+
     
         public static void Main(string[] args) 
         {
 
             bool looper = true;
 
-            Console.WriteLine("Please select a shape \n 1. Tripezium \n 2. Square \n 3. Triangle \n 4. Circle \n 5. Rectangle");
+            Console.WriteLine("Please select a shape \n 1. Tripezium \n 2. Square \n 3. Triangle \n 4. Cube \n 5. Rectangle");
             int shape = int.Parse(Console.ReadLine());
       
            
@@ -66,14 +67,15 @@ namespace ConsoleApp4
 
                 else if (shape == 4)
                 {
-                    Console.WriteLine("Please enter the circle radius value");
-                    double r = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Please enter the value of a side");
+                    double s = double.Parse(Console.ReadLine());
             
              
 
                     Circle circle = new Circle();
 
-                    Console.WriteLine("The Area is: " + circle.getArea(r));
+                    Console.WriteLine("The result will display the surface area of a cube");
+                    Console.WriteLine("The Surface-Area is: " + circle.getArea(s));
                     break;
                 }
 

@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    public abstract class Area
+    public class Tripezium : Area
     {
 
-        public double getArea(int a)
+        public double getArea(double a, double b, double h)
         {
-            return 0;
+
+            return 0.5 * (a + b) * h;
+
         }
 
     }
-
 }
