@@ -6,14 +6,36 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    public class Square : Area
+
+    /// <summary>
+    ///     <para>
+    ///         Representation of Square Shape
+    ///     </para>
+    /// </summary>
+    public class Square : Shape
     {
 
-        public double getArea(double s)
+        /// <summary>
+        ///     <para>
+        ///         Representation of Square Shape
+        ///     </para>
+        ///     <par>
+        ///          Provides methods for calculating Area
+        ///      </par>
+        /// </summary>
+        /// <param name="side">side</param>
+        public Square(double side) : base(side , 0,0,0) {
+            this.W = side;
+        }
+
+        public override double Area()
         {
+            return Math.Pow(base.W,2);
+        }
 
-            return s * s;
-
+        public override string ToString()
+        {
+            return $"Square Area : {Area():F2}";
         }
 
     }

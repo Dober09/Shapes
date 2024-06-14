@@ -6,14 +6,36 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    public class Rectangle : Area
+    /// <summary>
+    ///     <para>
+    ///          Representation of Rectangle Shape
+    ///     </para>
+    /// </summary>
+    public class Rectangle : Shape
     {
-        public double getArea(double l, double w)
+        /// <summary>
+        ///         <para>
+        ///             Representation of Rectangle Shape
+        ///         </para>
+        ///         <par>
+        ///              Provides methods for calculating Area
+        ///         </par>
+        /// </summary>
+        /// <param name="legnth">Legnth</param>
+        /// <param name="width">Width</param>
+        public Rectangle(double legnth,double width) : base(legnth,width,0,0) {
+            this.W = legnth;
+            this.X = width;
+        }
+        public override double Area()
         {
-
-            return l * w;
-
+            return base.W * base.X;
         }
 
+
+        public override string ToString()
+        {
+            return $"Rectangle Area : {Area():F2}";
+        }
     }
 }
